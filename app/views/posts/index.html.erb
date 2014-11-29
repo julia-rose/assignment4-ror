@@ -1,0 +1,12 @@
+<h1>This is posts#index</h1>
+
+<%= @current_user.username %>
+<br>
+<br>
+<%= @posts.each do |post| %>
+	<%= post.title %>
+	<br>
+	<%= post.body %>
+	<br>
+	<br>
+<% end %>
