@@ -6,6 +6,8 @@ class UsersController < ApplicationController
 	def show
 		@id = params[:id]
 		@current_user = User.find(@id)
+		# Typically we would just write
+		# @user = User.find(params[:id])
 	end
 
 	def destroy
